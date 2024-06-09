@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    margin-top: 50px;
+}
+
+.button-container {
+    margin-top: 30px;
+}
+
+.social-button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#youtube-btn {
+    background-color: #FF0000;
+}
+
+#youtube-btn:hover {
+    background-color: #CC0000;
+}
+
+#facebook-btn {
+    background-color: #3b5998;
+}
+
+#facebook-btn:hover {
+    background-color: #2d4373;
+}
+
+#twitter-btn {
+    background-color: #1DA1F2;
+}
+
+#twitter-btn:hover {
+    background-color: #0d8aec;
+}
