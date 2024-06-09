@@ -1,23 +1,63 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sims Database Links</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; /* Adjust as needed */
+        }
+        .social-media-label {
+            display: block;
+            font-weight: bold;
+            font-size: 30px; /* Adjust the font size as needed */
+            margin-top: 20px; /* Adjust as needed */
+            text-decoration: underline; /* Add underline */
+            text-shadow: 2px 2px 3px rgba(0,0,0,0.5); /* Add shadow */
+        }
+        .login-button {
+            background-color: #3b5998;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin: 10px 0; /* Add margin between buttons */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+        }
+        .login-button:hover {
+            background-color: #2d4373;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="text-center">Sims Database Links</h1>
-    <div class="button-container">
-        <div class="social-column">
-            <button class="social-button" id="youtube-btn">YouTube</button>
-        </div>
-        <div class="social-column">
-            <button class="social-button" id="facebook-btn">Facebook</button>
-        </div>
-        <div class="social-column">
-            <button class="social-button" id="twitter-btn">Twitter</button>
-        </div>
-    </div>
-    <script src="app.js"></script>
+
+<p class="social-media-label">Sims Database Links</p>
+
+<div class="button-container">
+    <button class="login-button" onclick="openWebsite('https://facebook.com/')">Database 1</button>
+    <button class="login-button" onclick="openWebsite('https://twitter.com/')">Database 2</button>
+    <button class="login-button" onclick="openWebsite('https://www.youtube.com/')">Database 3</button>
+</div>
+
+<script>
+    function openWebsite(url) {
+        window.location.href = url;
+    }
+</script>
+
 </body>
 </html>
