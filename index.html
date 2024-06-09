@@ -11,6 +11,22 @@
             padding: 0;
             text-align: center;
             margin-top: 50px;
+            background-image: url('Database.jpg'); /* Image path */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent repeating the background */
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            position: absolute; /* Position the overlay */
+            top: 0; /* Position from the top */
+            left: 0; /* Position from the left */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            flex-direction: column; /* Stack elements vertically */
         }
         .button-container {
             display: flex;
@@ -21,13 +37,14 @@
         .social-media-label {
             display: block;
             font-weight: bold;
-            font-size: 30px; /* Adjust the font size as needed */
+            font-size: 24px; /* Adjust the font size as needed */
             margin-top: 20px; /* Adjust as needed */
             text-decoration: underline; /* Add underline */
             text-shadow: 2px 2px 3px rgba(0,0,0,0.5); /* Add shadow */
+            color: #fff; /* White text color */
         }
         .login-button {
-            background-color: #3b5998;
+            background-color: #007bff; /* Blue button color */
             color: white;
             padding: 10px 20px;
             font-size: 18px;
@@ -39,18 +56,22 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
         }
         .login-button:hover {
-            background-color: #2d4373;
+            background-color: #0056b3; /* Darker blue on hover */
         }
     </style>
 </head>
 <body>
+<div class="overlay">
+    <p class="social-media-label">Sims Database Links</p>
 
-<p class="social-media-label">Sims Database Links</p>
+    <div class="button-container">
+        <button class="login-button" onclick="openWebsite('https://facebook.com/')">Database 1</button>
+        <button class="login-button" onclick="openWebsite('https://twitter.com/')">Database 2</button>
+        <button class="login-button" onclick="openWebsite('https://www.youtube.com/')">Database 3</button>
+   <button class="login-button" onclick="openWebsite('https://www.youtube.com/')">Database 4</button>
+   <button class="login-button" onclick="openWebsite('https://www.youtube.com/')">Database 5</button>
 
-<div class="button-container">
-    <button class="login-button" onclick="openWebsite('https://facebook.com/')">Database 1</button>
-    <button class="login-button" onclick="openWebsite('https://twitter.com/')">Database 2</button>
-    <button class="login-button" onclick="openWebsite('https://www.youtube.com/')">Database 3</button>
+    </div>
 </div>
 
 <script>
